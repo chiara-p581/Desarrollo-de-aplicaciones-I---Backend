@@ -17,9 +17,10 @@ app.use(express.json());
 connectDB();
 
 // Rutas
-app.use('/api/auth', authRoutes);
-app.use('/api/trips', tripRoutes);
-app.use('/api/trips', activityRoutes);
+app.use('/auth', authRoutes);
+app.use('/trips', tripRoutes);
+app.use('/trips', activityRoutes);
+app.use('/share', shareRoutes);
 
 // Ruta de prueba
 app.get('/', (req, res) => {
