@@ -37,6 +37,8 @@ const createTrip = async (req, res) => {
     endDate,
     coverImage: coverImage || null,
     });
+
+    res.status(201).json(trip);
 } catch (error) {    res.status(500).json({ message: 'Error en el servidor', error: error.message });
   }
 };
