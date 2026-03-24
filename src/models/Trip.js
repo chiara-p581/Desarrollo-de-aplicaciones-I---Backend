@@ -12,10 +12,9 @@ const tripSchema = new mongoose.Schema({
         required: [true, "A title for the trip is required"],
         trim: true
     },
-    destinatios:{
-        type: [String],
-        required: [true, "At least one destination is required"],
-        trim: true
+    destinations: {
+    type: [String],
+    required: [true, "At least one destination is required"],
     },
     description: {
         type: String,
